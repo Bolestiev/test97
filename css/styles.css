@@ -987,7 +987,49 @@ background: #fff;
 .our-team-svg {
 }
 
+/* ---------------------OUR PORTFOLIO---------------------------- */
 
+.pictures-all {
+  margin-bottom: 72px;
+  text-transform: capitalize;
+}
+
+.container-device {
+  padding: 32px 16px;
+  border: 1px solid #E7E9FC;
+  border-top: none;
+}
+
+.photophraph-list {
+  margin-bottom: 8px;
+}
+
+.info-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.overlay-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #F4F4FD;
+  padding: 40px 32px;
+  text-align: left;
+
+  position: absolute;
+  background-color: #4D5AE5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 }
 /* ================================================= TABLET 👇 ========================================= */
@@ -1139,7 +1181,13 @@ text-align: start;
 
 .item-two {
 
+}
+.container-section-three {
 
+}
+.container {
+
+}
 .headliner-two {
 font-weight: 700;
 font-size: 36px;
@@ -1161,8 +1209,16 @@ width: 264px;
 height: 428px;
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 background: #fff;
-}
 
+}
+.image {
+
+}
+.container-name-proffession {
+
+}
+.namer-one {
+}
 
 
 }
@@ -1191,7 +1247,7 @@ background: #fff;
 .section-one {
     max-width: 1440px;
     padding: 188px 0;
-       background-image: linear-gradient(
+    background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -1247,5 +1303,17 @@ background: #fff;
 
 /* ---------------------------OUR TEAM-------------------------- */
 
+.menu-section-three {
+    flex-direction: row;
+    gap: 24px; 
+}
+.worker-one {
+  flex-basis: calc((100% - 3 * 24px)/4);
+}
+
+.container-section-three {
+    width: 1158px;
+    padding: 0 15px;
+}
 
 }
