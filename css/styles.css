@@ -1382,6 +1382,40 @@ background: #fff;
   flex-basis: calc((100% - 24px)/2);
 }
 
+
+/* -----------------------FOOTER--------------------------- */
+
+.finish-list {
+  padding: 96px 0;
+}
+
+.container-finish {
+width: 584px;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 72px 24px;
+}
+
+.finish-list .text-end {
+max-width: 264px;
+}
+
+.form-footer {
+flex-direction: row;
+}
+
+.subscribe-text {
+  text-align: start;
+}
+
+.container-finish .footer-media {
+  align-self: flex-start;
+}
+
+.finish-list .footer-logo {
+  align-self: flex-start;
+}
+
 }
 
 /* ================================================= DESKTOP 👇 ========================================= */
