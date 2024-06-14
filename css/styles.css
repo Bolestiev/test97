@@ -1204,6 +1204,124 @@ background-color: #31D0AA;
   color: #FFFFFF;
 }
 
+
+/* --------------------------MODAL------------------------------- */
+
+.modal {
+width: 320px;
+height: 640px;
+}
+
+
+/* -------------------------MOBILE MENU----------------------------- */
+
+.mobile-menu-overlay a {
+  text-decoration: none;
+}
+
+.mobile-overlay .footer-socials {
+  gap: 40px;
+}
+
+.mobile-overlay {
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 998;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu-overlay {
+  position: absolute;
+  background-color: #FFFFFF;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 72px 24px 40px 16px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #EBEBEC;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.mobile-menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mobile-menu-nav-item.is-active {
+  color: #404bbf;
+}
+
+.mobile-menu-adress-list.is-active {
+  color: #404bbf;
+}
+
+.mobile-menu-nav-item {
+  color: #404bbf;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu-nav-item:hover,
+.mobile-menu-nav-item:focus {
+  color: #404bbf;
+}
+
+.mobile-menu-adress {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.mobile-menu-adress-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.mobile-menu-adress-item:hover,
+.mobile-menu-adress-item:focus {
+  color: var(--iris);
+}
+
+
 }
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) {
@@ -1410,9 +1528,10 @@ align-items: baseline;
 flex-wrap: wrap;
 }
 
+
+
 .finish-menu {
   margin-right: 24px;
-  margin-left: 108px;
   width: 264px;
 }
 
@@ -1436,7 +1555,6 @@ flex-direction: row;
 }
 
 .label-footer{
-  padding-right: 24px;
 }
 
 .subscribe-text {
@@ -1449,6 +1567,14 @@ flex-direction: row;
 
 .finish-list .footer-logo {
   align-self: flex-start;
+}
+
+
+/* --------------------------MODAL------------------------------- */
+
+.modal {
+  width: 408px;
+ height: 584px;
 }
 
 }
@@ -1577,10 +1703,13 @@ flex-direction: row;
   align-items: flex-start;
   padding: 0 20px;
   box-sizing: border-box;
+  flex-wrap: nowrap;
+  gap: unset;
 }
 
 .finish-menu {
   margin-right: 120px;
+  
 }
 
 .footer-logo {
